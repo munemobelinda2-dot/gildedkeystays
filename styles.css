@@ -14,7 +14,7 @@ a{color:inherit; text-decoration:none} img{max-width:100%; display:block}
 .nav__links .cta{padding:.5rem .9rem; border:1px solid var(--text); border-radius:999px}
 .logo{font-weight:700; letter-spacing:.4px} .tag{font-size:.8rem; color:var(--muted)}
 
-/* hero with video */
+/* hero with video (image fallback) */
 .hero{ position:relative; overflow:hidden; min-height:65vh; padding: 6rem 1.2rem 3rem; }
 .hero__bg{ position:absolute; inset:0; z-index:-1 }
 .hero__video{ width:100%; height:100%; object-fit:cover; filter:brightness(.78) }
