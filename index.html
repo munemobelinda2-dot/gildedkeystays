@@ -8,12 +8,12 @@
   <meta property="og:title" content="The Gilded Key Stays — Luxury Lavington Suite" />
   <meta property="og:description" content="King bed • Skyline balcony • 65″ TV • Pool & Gym • Fast Wi‑Fi • Smart lock" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:image" content="https://gildedkeyassets.netlify.app/og-image.jpg" />
+  <link rel="icon" href="https://gildedkeyassets.netlify.app/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.png" />
 </head>
 <body>
   <header class="nav">
@@ -30,10 +30,12 @@
     </nav>
   </header>
 
+  <!-- HERO with video background (image fallback) -->
   <section class="hero">
     <div class="hero__bg">
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/hero.jpg">
-        <source src="assets/suite-hero.mp4" type="video/mp4" />
+      <video class="hero__video" autoplay muted loop playsinline
+             poster="https://gildedkeyassets.netlify.app/hero.jpg">
+        <source src="https://gildedkeyassets.netlify.app/suite-hero.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="hero__content">
@@ -53,25 +55,27 @@
     </div>
   </section>
 
+  <!-- GALLERY with lightbox -->
   <section id="gallery" class="gallery">
     <div class="section__head">
       <h2>Gallery</h2>
       <p>A glimpse of your stay.</p>
     </div>
     <div class="gallery__grid">
-      <div class="card"><img src="assets/hero.jpg" alt="Stylish living & dining area" /></div>
-      <div class="card"><img src="assets/balcony.jpg" alt="Living room with balcony and city views" /></div>
-      <div class="card"><img src="assets/kitchen.jpg" alt="Modern, fully equipped kitchen" /></div>
-      <div class="card"><img src="assets/bedroom.jpg" alt="Bedroom with plush headboard and crisp linens" /></div>
-      <div class="card"><img src="assets/bathroom.jpg" alt="Sparkling bathroom with glass shower" /></div>
-      <div class="card"><img src="assets/pool.jpg" alt="Indoor swimming pool" /></div>
-      <div class="card"><img src="assets/gym.jpg" alt="Well-equipped gym" /></div>
-      <div class="card"><img src="assets/kidsplay.jpg" alt="Indoor kids play area" /></div>
-      <div class="card"><img src="assets/parking.jpg" alt="Secure parking & entrance lobby" /></div>
-      <div class="card"><img src="assets/laundry.jpg" alt="In-unit washer/dryer" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/hero.jpg" alt="Stylish living & dining area" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/balcony.jpg" alt="Living room with balcony and city views" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/kitchen.jpg" alt="Modern, fully equipped kitchen" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/bedroom.jpg" alt="Bedroom with plush headboard and crisp linens" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/bathroom.jpg" alt="Sparkling bathroom with glass shower" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/pool.jpg" alt="Indoor swimming pool" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/gym.jpg" alt="Well-equipped gym" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/kidsplay.jpg" alt="Indoor kids play area" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/parking.jpg" alt="Secure parking & entrance lobby" /></div>
+      <div class="card"><img src="https://gildedkeyassets.netlify.app/laundry.jpg" alt="In-unit washer/dryer" /></div>
     </div>
   </section>
 
+  <!-- WHY STAY -->
   <section id="amenities" class="amenities">
     <div class="section__head">
       <h2>Why stay with us</h2>
@@ -79,14 +83,15 @@
     </div>
     <ul class="amenities__list">
       <li>Direct booking perks • best price guaranteed</li>
-      <li>Work‑friendly: fast Wi‑Fi, spacious desk dining area</li>
+      <li>Work‑friendly: fast Wi‑Fi, spacious dining/work table</li>
       <li>Thoughtful touches: blackout curtains, plush linens, stocked basics</li>
       <li>Self check‑in via smart lock • secure parking</li>
       <li>Full kitchen • washer/dryer in unit</li>
-      <li>Pool & gym access • near Junction Mall (Ngong Rd)</li>
+      <li>Pool & gym access • steps from Junction Mall (Ngong Rd)</li>
     </ul>
   </section>
 
+  <!-- AVAILABILITY -->
   <section id="availability" class="availability">
     <div class="section__head">
       <h2>Availability & Booking</h2>
@@ -101,7 +106,7 @@
         <label><span>Promo code</span><input type="text" id="promo" placeholder="(optional)" /></label>
       </div>
       <div class="price">
-        <div>Nightly rate: <strong id="nightlyRateDisplay">$85</strong></div>
+        <div>Nightly rate: <strong id="nightlyRateDisplay">$50</strong></div>
         <div>Nights: <strong id="nightsDisplay">0</strong></div>
         <div>Subtotal: <strong id="subtotalDisplay">$0</strong></div>
         <div>Cleaning: <strong id="cleaningDisplay">$15</strong></div>
@@ -124,6 +129,7 @@
     </details>
   </section>
 
+  <!-- LOCATION -->
   <section id="location" class="location">
     <div class="section__head">
       <h2>Your Nairobi base</h2>
@@ -134,6 +140,7 @@
     </div>
   </section>
 
+  <!-- POLICIES -->
   <section id="policies" class="policies">
     <div class="section__head"><h2>House Rules & Policies</h2></div>
     <ul class="policies__list">
@@ -145,12 +152,13 @@
     </ul>
   </section>
 
+  <!-- FOOTER -->
   <footer id="contact" class="footer">
     <div class="footer__grid">
       <div>
         <h3>The Gilded Key Stays</h3>
         <p>Luxury Lavington Suite<br/>Lavington • Nairobi, Kenya</p>
-        <p><a id="telLink" href="#">+254 7XX XXX XXX</a></p>
+        <p><a id="telLink" href="#">+1 940 603 2432</a></p>
       </div>
       <div>
         <h4>Book direct</h4>
@@ -166,6 +174,7 @@
     <p class="copyright">© <span id="year"></span> The Gilded Key. All rights reserved.</p>
   </footer>
 
+  <!-- Floating WhatsApp bubble -->
   <a id="waBubble" class="wa-bubble" href="#" target="_blank" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M27.5 14.5c0 7.18-5.82 13-13 13-2.28 0-4.42-.59-6.27-1.63L2 27l1.24-6.05C2.15 19.1 1.5 16.87 1.5 14.5 1.5 7.32 7.32 1.5 14.5 1.5s13 5.82 13 13z" fill="currentColor"/></svg>
   </a>
