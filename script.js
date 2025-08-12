@@ -100,6 +100,7 @@
       booked.add(iso(d));
     }
   }
+
   async function loadCalendar(){
     const src = icalInput.value.trim();
     if (!src){ status.textContent = "Paste an iCal URL first."; return; }
@@ -134,6 +135,7 @@
       status.textContent = "Could not load iCal (check URL).";
     }
   }
+
   if(btn) btn.addEventListener("click", loadCalendar);
 })();
 
