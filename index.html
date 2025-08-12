@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Gilded Key Stays — Luxury Lavington Suite</title>
+  <meta name="description" content="Luxury Lavington Suite near Junction Mall. King bed, skyline balcony, pool & gym, fast Wi‑Fi, full kitchen, washer/dryer. Book direct & save." />
+  <meta property="og:title" content="The Gilded Key Stays — Luxury Lavington Suite" />
+  <meta property="og:description" content="King bed • Skyline balcony • 65″ TV • Pool & Gym • Fast Wi‑Fi • Smart lock" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand">
+      <div class="logo">The Gilded Key Stays</div>
+      <div class="tag">your dream stay awaits</div>
+    </div>
+    <nav class="nav__links">
+      <a href="#gallery">Gallery</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#availability">Availability</a>
+      <a href="#location">Location</a>
+      <a href="#contact" class="cta">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__bg">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/hero.jpg">
+        <source src="assets/suite-hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero__content">
+      <h1>Luxury Lavington Suite</h1>
+      <p>Modern 1‑bed near Junction Mall — king bed, skyline balcony, pool & gym, 65″ smart TV, high‑speed Wi‑Fi, full kitchen, washer/dryer, and secure smart lock access.</p>
+      <div class="chips"><span>King Bed</span><span>Skyline Balcony</span><span>Pool & Gym</span><span>Fast Wi‑Fi</span><span>Washer/Dryer</span></div>
+      <div class="pricebadge">From <strong>$50</strong> / night</div>
+      <div class="hero__actions">
+        <a href="#availability" class="btn">Check Dates</a>
+        <a id="whatsappCTA" class="btn btn--ghost" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="trust">
+        <span>✓ Book Direct & Save</span>
+        <span>✓ Instant Confirmation</span>
+        <span>✓ Secure Payment</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="section__head">
+      <h2>Gallery</h2>
+      <p>A glimpse of your stay.</p>
+    </div>
+    <div class="gallery__grid">
+      <div class="card"><img src="assets/hero.jpg" alt="Stylish living & dining area" /></div>
+      <div class="card"><img src="assets/balcony.jpg" alt="Living room with balcony and city views" /></div>
+      <div class="card"><img src="assets/kitchen.jpg" alt="Modern, fully equipped kitchen" /></div>
+      <div class="card"><img src="assets/bedroom.jpg" alt="Bedroom with plush headboard and crisp linens" /></div>
+      <div class="card"><img src="assets/bathroom.jpg" alt="Sparkling bathroom with glass shower" /></div>
+      <div class="card"><img src="assets/pool.jpg" alt="Indoor swimming pool" /></div>
+      <div class="card"><img src="assets/gym.jpg" alt="Well-equipped gym" /></div>
+      <div class="card"><img src="assets/kidsplay.jpg" alt="Indoor kids play area" /></div>
+      <div class="card"><img src="assets/parking.jpg" alt="Secure parking & entrance lobby" /></div>
+      <div class="card"><img src="assets/laundry.jpg" alt="In-unit washer/dryer" /></div>
+    </div>
+  </section>
+
+  <section id="amenities" class="amenities">
+    <div class="section__head">
+      <h2>Why stay with us</h2>
+      <p>Everything you need, nothing you don't.</p>
+    </div>
+    <ul class="amenities__list">
+      <li>Direct booking perks • best price guaranteed</li>
+      <li>Work‑friendly: fast Wi‑Fi, spacious desk dining area</li>
+      <li>Thoughtful touches: blackout curtains, plush linens, stocked basics</li>
+      <li>Self check‑in via smart lock • secure parking</li>
+      <li>Full kitchen • washer/dryer in unit</li>
+      <li>Pool & gym access • near Junction Mall (Ngong Rd)</li>
+    </ul>
+  </section>
+
+  <section id="availability" class="availability">
+    <div class="section__head">
+      <h2>Availability & Booking</h2>
+      <p>Pick your dates. Pay securely. You're set.</p>
+    </div>
+
+    <form id="bookingForm" class="booking">
+      <div class="booking__grid">
+        <label><span>Check‑in</span><input type="date" id="checkIn" required /></label>
+        <label><span>Check‑out</span><input type="date" id="checkOut" required /></label>
+        <label><span>Guests</span><input type="number" id="guests" min="1" max="2" value="1" required /></label>
+        <label><span>Promo code</span><input type="text" id="promo" placeholder="(optional)" /></label>
+      </div>
+      <div class="price">
+        <div>Nightly rate: <strong id="nightlyRateDisplay">$85</strong></div>
+        <div>Nights: <strong id="nightsDisplay">0</strong></div>
+        <div>Subtotal: <strong id="subtotalDisplay">$0</strong></div>
+        <div>Cleaning: <strong id="cleaningDisplay">$15</strong></div>
+        <div>Total: <strong id="totalDisplay">$0</strong></div>
+      </div>
+      <div class="booking__actions">
+        <button type="submit" class="btn">Reserve</button>
+        <a id="airbnbLink" class="btn btn--ghost" href="#" target="_blank" rel="noopener">View on Airbnb</a>
+      </div>
+      <p class="fineprint">* Secure card payments handled by Stripe. A hold may be placed prior to arrival. See policies below.</p>
+    </form>
+
+    <details class="ics">
+      <summary>Sync with Airbnb calendar</summary>
+      <p>Paste your <strong>Airbnb iCal</strong> URL to block booked dates on the calendar and prevent double‑booking.</p>
+      <label><span>Airbnb iCal URL</span><input type="url" id="icalUrl" placeholder="https://www.airbnb.com/calendar/ical/..." /></label>
+      <button id="loadIcs" class="btn btn--ghost" type="button">Load Calendar</button>
+      <div id="icsStatus" class="ics__status"></div>
+      <p class="ics__feed">Direct bookings → Airbnb: <a id="directIcsLink" href="/.netlify/functions/direct-ics" target="_blank" rel="noopener">Your Direct Bookings iCal Feed</a></p>
+    </details>
+  </section>
+
+  <section id="location" class="location">
+    <div class="section__head">
+      <h2>Your Nairobi base</h2>
+      <p>Lavington, Nairobi — steps from Junction Mall on Ngong Road.</p>
+    </div>
+    <div class="map__wrap">
+      <iframe title="Map to Luxury Lavington Suite" src="https://www.google.com/maps?q=Junction%20Mall%20Nairobi&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="policies" class="policies">
+    <div class="section__head"><h2>House Rules & Policies</h2></div>
+    <ul class="policies__list">
+      <li>Check‑in after 2:00 PM • Check‑out by 11:00 AM</li>
+      <li>No parties or events • No smoking</li>
+      <li>Quiet hours 10:00 PM – 7:00 AM</li>
+      <li>Security deposit may be required</li>
+      <li>Free cancellation within 48h of booking if check‑in ≥ 7 days away</li>
+    </ul>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="footer__grid">
+      <div>
+        <h3>The Gilded Key Stays</h3>
+        <p>Luxury Lavington Suite<br/>Lavington • Nairobi, Kenya</p>
+        <p><a id="telLink" href="#">+254 7XX XXX XXX</a></p>
+      </div>
+      <div>
+        <h4>Book direct</h4>
+        <p><a id="stripeLink" href="#" target="_blank" rel="noopener">Pay securely</a></p>
+        <p><a id="waLink" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+        <p><a id="emailLink" href="#">stay@gildedkey.africa</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p><a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">TikTok</a></p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> The Gilded Key. All rights reserved.</p>
+  </footer>
+
+  <a id="waBubble" class="wa-bubble" href="#" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M27.5 14.5c0 7.18-5.82 13-13 13-2.28 0-4.42-.59-6.27-1.63L2 27l1.24-6.05C2.15 19.1 1.5 16.87 1.5 14.5 1.5 7.32 7.32 1.5 14.5 1.5s13 5.82 13 13z" fill="currentColor"/></svg>
+  </a>
+
+  <script>
+    window.GK_CONFIG = {
+      whatsappNumber: "+19406032432",
+      telNumber: "+19406032432",
+      airbnbUrl: "https://www.airbnb.com/l/7DIRsChm",
+      stripeCheckoutUrl: "https://checkout.stripe.com/pay/cs_test_...",
+      nightlyRate: 50,
+      cleaningFee: 15,
+      promoCodes: {"GILDED10": 0.1}
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
